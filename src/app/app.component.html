@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div *ngIf="single_img">
+<div class="featured-image img"
+[ngStyle]="{'background-image': 'url(' + single_img.post_url + '/download)'}"
+[class.loading]="single_img.loading"></div>
+</div>
+
+<div *ngIf="img_collection">
+  <div *ngFor="let img of img_collection">
+    <div class="single-img-collection img"
+    [ngStyle]="{'background-image': 'url(' + img.post_url + '/download)'}"
+    [class.loading]="img.loading">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.featured-image{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.single-img-collection{
+  float: left;
+  width: 33%;
+  max-height: 33vh;
+  height: 33.33333vh;
+  background-size: cover;
+}
+
+.img.loading{
+  opacity: 0;
+}
+
+.img{
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
